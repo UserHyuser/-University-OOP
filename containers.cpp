@@ -28,4 +28,12 @@ namespace simple_animals {
 			cont[i]->Out(ofst);
 		}
 	}
+	void container::OnlyFish(ofstream &ofst) {
+		ofst << "Только рыба." << endl;
+		for (int i = 0; i < len; i++) {
+			ofst << i << ": ";
+			cont[i]->OnlyFish(ofst);
+		}
+		ofst << "Теперь не только рыба." << endl;
+	}
 } // end simple_animals namespace

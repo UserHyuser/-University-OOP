@@ -27,4 +27,7 @@ namespace simple_animals {
 				<< endl;
 		}
 	}
+	void fish::OnlyFish(ofstream &ofst) {
+		Out(ofst);
+	}
 } // end simple_animals namespace

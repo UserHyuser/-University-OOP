@@ -12,6 +12,7 @@ namespace simple_animals {
 		// переопределяем интерфейс класса
 		void InData(ifstream &ifst);  // ввод
 		void Out(ofstream &ofst);     // вывод 
+		void OnlyFish(ofstream &ofst);
 		fish() {} // создание без инициализации.
 	};
 } // end simple_animals namespace

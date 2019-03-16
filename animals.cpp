@@ -26,5 +26,8 @@ namespace simple_animals {
 		sp->InData(ifst);
 		return sp;
 	}
+	void animal::OnlyFish(ofstream &ofst) {
+		ofst << endl; 
+	}
 } // end simple_animals namespace
 
