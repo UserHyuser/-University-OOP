@@ -26,6 +26,8 @@ namespace simple_animals {
 		for (int i = 0; i < len; i++) {
 			ofst << i << ": ";
 			cont[i]->Out(ofst);
+			ofst << "Длина имени: " 
+				<< cont[i]->LenghtName() << endl;
 		}
 	}
 } // end simple_animals namespace
