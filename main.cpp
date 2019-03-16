@@ -4,18 +4,18 @@
 #include "animal_atd.h"
 //#include "containers.cpp"
 
-//namespace simple_animals {
-//	// Сигнатуры требуемых внешних функций
-//	void Clear();
-//	void In(ifstream &ifst);
-//	void Out(ofstream &ofst);
-//}
+
 using namespace std;
 
-int main()
+int main(int argc, char* argv[])
 {
 	setlocale(LC_ALL, "Russian");
-
+	if (argc != 3)
+	{
+		cout << "incorrect command line! "
+			"Waited: command infile outfile" << endl;
+		exit(1);
+	}
 	ifstream in;
 	in.open("in.txt");
 	if (!in.is_open())
@@ -36,6 +36,7 @@ int main()
 
 	simple_animals::container* begin = new simple_animals::container;
 	begin->In(in);
+	begin->Sort();
 	begin->Out(out);
 
 	cout << "Stop" << endl;

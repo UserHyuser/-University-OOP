@@ -26,6 +26,20 @@ namespace simple_animals {
 		for (int i = 0; i < len; i++) {
 			ofst << i << ": ";
 			cont[i]->Out(ofst);
+			ofst << "Длина имени: " 
+				<< cont[i]->LenghtName() << endl;
 		}
 	}
+	void container::Sort() {
+		for (int i = 0; i < len - 1; i++) {
+			for (int j = i + 1; j < len; j++) {
+				if (cont[i]->Compare(*cont[j])) {
+					animal *tmp = cont[i];
+					cont[i] = cont[j];
+					cont[j] = tmp;
+				}
+			}
+		}
+	}
+	
 } // end simple_animals namespace
