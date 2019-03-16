@@ -4,12 +4,7 @@
 #include "animal_atd.h"
 //#include "containers.cpp"
 
-//namespace simple_animals {
-//	// Сигнатуры требуемых внешних функций
-//	void Clear();
-//	void In(ifstream &ifst);
-//	void Out(ofstream &ofst);
-//}
+
 using namespace std;
 
 int main()
