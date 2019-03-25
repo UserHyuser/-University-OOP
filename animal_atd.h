@@ -9,6 +9,7 @@ namespace simple_animals {
 	// проверку интерфейса 
 	class animal {
 	public:
+		char name[20];
 		// иденитфикация, порождение и ввод фигуры из пото-ка
 		static  animal* In(ifstream &ifst);
 		virtual void InData(ifstream &ifst) = 0;  // ввод

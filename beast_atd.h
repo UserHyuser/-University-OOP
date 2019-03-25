@@ -6,7 +6,7 @@
 namespace simple_animals {
 	// животное
 	class beast : public animal {
-		char name[20];
+		
 		int eat; // хищник - 0 травоядное - 1 насекомоядное -2
 	public:
 		// переопределяем интерфейс класса
