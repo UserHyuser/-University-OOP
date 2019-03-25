@@ -1,18 +1,19 @@
+
 #pragma once
 #ifndef __fish_atd__
 #define __fish_atd__
-// Òðåáóåòñÿ îïèñàíèå êëàññà animal
+// ��������� �������� ������ animal
 #include "animal_atd.h"
 namespace simple_animals {
-	// øàð
+	// ���
 	class fish : public animal {
-		int place; // ãäå æèâåò ðûáà 0 - îçåðî 1 - ìîðå 2 - ðåê
+		int place; // ��� ����� ���� 0 - ����� 1 - ���� 2 - ����
 	public:
-		// ïåðåîïðåäåëÿåì èíòåðôåéñ êëàññà
-		void InData(ifstream &ifst);  // ââîä
-		void Out(ofstream &ofst);     // âûâîä 
-		fish() {} // ñîçäàíèå áåç èíèöèàëèçàöèè.
+		// �������������� ��������� ������
+		void InData(ifstream &ifst);  // ����
+		void Out(ofstream &ofst);     // ����� 
+		int LenghtName();
+		fish() {} // �������� ��� �������������.
 	};
 } // end simple_animals namespace
-#endif
 

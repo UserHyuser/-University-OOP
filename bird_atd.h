@@ -1,3 +1,4 @@
+
 #pragma once
 #ifndef __bird_atd__
 #define __bird_atd__
@@ -12,7 +13,9 @@ namespace simple_animals {
 		// ïåðåîïðåäåëÿåì èíòåðôåéñ êëàññà
 		void InData(ifstream &ifst);  // ââîä
 		void Out(ofstream &ofst);    // âûâîä 
+    int LenghtName();
 		bird() {} // ñîçäàíèå áåç èíèöèàëèçàöèè.
 	};
 } // end simple_animals namespace
 #endif
+

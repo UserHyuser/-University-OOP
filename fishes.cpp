@@ -28,4 +28,11 @@ namespace simple_animals {
 				<< " возраст: " << age << endl;
 		}
 	}
+	int fish::LenghtName() {
+		int arrayLength = 0;
+		for (int i = 0; name[i]; i++) {
+			arrayLength++;
+		}
+		return arrayLength;
+	}
 } // end simple_animals namespace

@@ -11,6 +11,7 @@ namespace simple_animals {
 	public:
 		void In(ifstream &ifst);     // ввод 
 		void Out(ofstream &ofst);    // вывод 
+		void LenghtName(ofstream &ofst);
 		void Clear();  // очистка контейнера от фигур
 		container();    // инициализация контейнера
 		~container() { Clear(); } // утилизация контейнера
