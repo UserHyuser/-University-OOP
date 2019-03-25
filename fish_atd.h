@@ -7,8 +7,8 @@ namespace simple_animals {
 	// шар
 	class fish : public animal {
 		int place; // где живет рыба 0 - озеро 1 - море 2 - река
-		char name[20];
-		int age = 0; //возраст
+		//char name[20];
+		//int age = 0; //возраст
 	public:
 		// переопределяем интерфейс класса
 		void InData(ifstream &ifst);  // ввод
