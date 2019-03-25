@@ -9,18 +9,12 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-	setlocale(LC_ALL, "Russian");
-	if (argc != 3)
-	{
-		cout << "incorrect command line! "
-			"Waited: command infile outfile" << endl;
-		exit(1);
-	}
+	setlocale(LC_ALL, "");
 	ifstream in;
 	in.open("in.txt");
 	if (!in.is_open())
 	{
-		cout << "Îøèáêà ñ ôàéëîì";
+		cout << "Ошибка с файлом";
 		return -1;
 	}
 
@@ -28,7 +22,7 @@ int main(int argc, char* argv[])
 	out.open("out.txt");
 	if (!out.is_open())
 	{
-		cout << "Îøèáêà ñ ôàéëîì";
+		cout << "Ошибка с файлом";
 		return -1;
 	}
 
@@ -36,7 +30,7 @@ int main(int argc, char* argv[])
 
 	simple_animals::container* begin = new simple_animals::container;
 	begin->In(in);
-  begin->Sort();
+	begin->Sort();
 	begin->OnlyFish(out);
 	begin->Out(out);
 

@@ -33,4 +33,6 @@ namespace simple_animals {
 		}
 		return arrayLength;
 	}
+
+
 } // end simple_animals namespace

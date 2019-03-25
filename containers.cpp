@@ -21,23 +21,23 @@ namespace simple_animals {
 
 	// Âûâîä ñîäåðæèìîãî êîíòåéíåðà
 	void container::Out(ofstream &ofst) {
-		ofst << "Êîíòåéíåð ñîäåðæèò " << len
-			<< " æèâîòíûõ." << endl;
+		ofst << "Контейнер содержит " << len
+			<< " животных." << endl;
 		for (int i = 0; i < len; i++) {
 			ofst << i << ": ";
 			cont[i]->Out(ofst);
-			ofst << "Äëèíà èìåíè: " 
+			ofst << "Длина имени: " 
 				<< cont[i]->LenghtName() << endl;
 		}
 	}
 
 	void container::OnlyFish(ofstream &ofst) {
-		ofst << "Òîëüêî ðûáà." << endl;
+		ofst << "Только рыба." << endl;
 		for (int i = 0; i < len; i++) {
 			ofst << i << ": ";
 			cont[i]->OnlyFish(ofst);
 		}
-		ofst << "Òåïåðü íå òîëüêî ðûáà." << endl;
+		ofst << "Теперь не только рыба." << endl;
 	}
 	void container::Sort() {
 		for (int i = 0; i < len - 1; i++) {
