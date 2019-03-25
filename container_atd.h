@@ -3,19 +3,19 @@
 #define __container_atd__
 #include "animal_atd.h"
 namespace simple_animals {
-	// Простейший контейнер на основе одномерного массива
+	// ГЏГ°Г®Г±ГІГҐГ©ГёГЁГ© ГЄГ®Г­ГІГҐГ©Г­ГҐГ° Г­Г  Г®Г±Г­Г®ГўГҐ Г®Г¤Г­Г®Г¬ГҐГ°Г­Г®ГЈГ® Г¬Г Г±Г±ГЁГўГ 
 	class container {
-		enum { max_len = 100 }; // максимальная длина
-		int len; // текущая длина
+		enum { max_len = 100 }; // Г¬Г ГЄГ±ГЁГ¬Г Г«ГјГ­Г Гї Г¤Г«ГЁГ­Г 
+		int len; // ГІГҐГЄГіГ№Г Гї Г¤Г«ГЁГ­Г 
 		animal *cont[max_len];
 	public:
-		void In(ifstream &ifst);     // ввод 
-		void Out(ofstream &ofst);    // вывод 
+		void In(ifstream &ifst);     // ГўГўГ®Г¤ 
+		void Out(ofstream &ofst);    // ГўГ»ГўГ®Г¤ 
 		void LenghtName(ofstream &ofst);
 		void Sort();
-		void Clear();  // очистка контейнера от фигур
-		container();    // инициализация контейнера
-		~container() { Clear(); } // утилизация контейнера
+		void Clear();  // Г®Г·ГЁГ±ГІГЄГ  ГЄГ®Г­ГІГҐГ©Г­ГҐГ°Г  Г®ГІ ГґГЁГЈГіГ°
+		container();    // ГЁГ­ГЁГ¶ГЁГ Г«ГЁГ§Г Г¶ГЁГї ГЄГ®Г­ГІГҐГ©Г­ГҐГ°Г 
+		~container() { Clear(); } // ГіГІГЁГ«ГЁГ§Г Г¶ГЁГї ГЄГ®Г­ГІГҐГ©Г­ГҐГ°Г 
 	};
 } // end simple_animals namespace
 #endif

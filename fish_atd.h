@@ -1,19 +1,19 @@
+
 #pragma once
 #ifndef __fish_atd__
 #define __fish_atd__
-// Требуется описание класса animal
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ animal
 #include "animal_atd.h"
 namespace simple_animals {
-	// шар
+	// пїЅпїЅпїЅ
 	class fish : public animal {
-		int place; // где живет рыба 0 - озеро 1 - море 2 - река
-		char name[20];
+		int place; // пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ 0 - пїЅпїЅпїЅпїЅпїЅ 1 - пїЅпїЅпїЅпїЅ 2 - пїЅпїЅпїЅпїЅ
 	public:
-		// переопределяем интерфейс класса
-		void InData(ifstream &ifst);  // ввод
-		void Out(ofstream &ofst);     // вывод 
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+		void InData(ifstream &ifst);  // пїЅпїЅпїЅпїЅ
+		void Out(ofstream &ofst);     // пїЅпїЅпїЅпїЅпїЅ 
 		int LenghtName();
-		fish() {} // создание без инициализации.
+		fish() {} // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	};
 } // end simple_animals namespace
 #endif

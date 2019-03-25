@@ -3,6 +3,7 @@
 // геометрических фигурах
 #include "bird_atd.h"
 #include "fish_atd.h"
+#include "beast_atd.h"
 using namespace std;
 #include "animal_atd.h"
 
@@ -19,6 +20,9 @@ namespace simple_animals {
 			break;
 		case 2:
 			sp = new fish;
+			break;
+		case 3:
+			sp = new beast;
 			break;
 		default:
 			return 0;
