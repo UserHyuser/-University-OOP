@@ -16,4 +16,4 @@ namespace simple_animals {
 		fish() {} // �������� ��� �������������.
 	};
 } // end simple_animals namespace
-
+#endif
