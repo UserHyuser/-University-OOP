@@ -4,16 +4,18 @@
 #include <fstream>
 using namespace std;
 namespace simple_animals {
-	// Класс, обобщающает все имеющиеся фигуры.
-	// Является абстрактным, обеспечивая, тем самым, 
-	// проверку интерфейса 
+	// ГЉГ«Г Г±Г±, Г®ГЎГ®ГЎГ№Г ГѕГ№Г ГҐГІ ГўГ±ГҐ ГЁГ¬ГҐГѕГ№ГЁГҐГ±Гї ГґГЁГЈГіГ°Г».
+	// ГџГўГ«ГїГҐГІГ±Гї Г ГЎГ±ГІГ°Г ГЄГІГ­Г»Г¬, Г®ГЎГҐГ±ГЇГҐГ·ГЁГўГ Гї, ГІГҐГ¬ Г±Г Г¬Г»Г¬, 
+	// ГЇГ°Г®ГўГҐГ°ГЄГі ГЁГ­ГІГҐГ°ГґГҐГ©Г±Г  
 	class animal {
+		
 	public:
+		int age = 0; 
 		char name[20];
-		// иденитфикация, порождение и ввод фигуры из пото-ка
+		// ГЁГ¤ГҐГ­ГЁГІГґГЁГЄГ Г¶ГЁГї, ГЇГ®Г°Г®Г¦Г¤ГҐГ­ГЁГҐ ГЁ ГўГўГ®Г¤ ГґГЁГЈГіГ°Г» ГЁГ§ ГЇГ®ГІГ®-ГЄГ 
 		static  animal* In(ifstream &ifst);
-		virtual void InData(ifstream &ifst) = 0;  // ввод
-		virtual void Out(ofstream &ofst) = 0;     // вывод
+		virtual void InData(ifstream &ifst) = 0;  // ГўГўГ®Г¤
+		virtual void Out(ofstream &ofst) = 0;     // ГўГ»ГўГ®Г¤
 	};
 } // end simple_animals namespace
 #endif

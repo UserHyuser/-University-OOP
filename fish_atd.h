@@ -1,18 +1,17 @@
 #pragma once
 #ifndef __fish_atd__
 #define __fish_atd__
-// Требуется описание класса animal
+// Г’Г°ГҐГЎГіГҐГІГ±Гї Г®ГЇГЁГ±Г Г­ГЁГҐ ГЄГ«Г Г±Г±Г  animal
 #include "animal_atd.h"
 namespace simple_animals {
-	// шар
+	// ГёГ Г°
 	class fish : public animal {
-		int place; // где живет рыба 0 - озеро 1 - море 2 - река
-		//char name[20];
+		int place; // ГЈГ¤ГҐ Г¦ГЁГўГҐГІ Г°Г»ГЎГ  0 - Г®Г§ГҐГ°Г® 1 - Г¬Г®Г°ГҐ 2 - Г°ГҐГЄ
 	public:
-		// переопределяем интерфейс класса
-		void InData(ifstream &ifst);  // ввод
-		void Out(ofstream &ofst);     // вывод 
-		fish() {} // создание без инициализации.
+		// ГЇГҐГ°ГҐГ®ГЇГ°ГҐГ¤ГҐГ«ГїГҐГ¬ ГЁГ­ГІГҐГ°ГґГҐГ©Г± ГЄГ«Г Г±Г±Г 
+		void InData(ifstream &ifst);  // ГўГўГ®Г¤
+		void Out(ofstream &ofst);     // ГўГ»ГўГ®Г¤ 
+		fish() {} // Г±Г®Г§Г¤Г Г­ГЁГҐ ГЎГҐГ§ ГЁГ­ГЁГ¶ГЁГ Г«ГЁГ§Г Г¶ГЁГЁ.
 	};
 } // end simple_animals namespace
 #endif
