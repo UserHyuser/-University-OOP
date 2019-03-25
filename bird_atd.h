@@ -1,18 +1,21 @@
+
 #pragma once
 #ifndef __bird_atd__
 #define __bird_atd__
-// Требеутся описание класса animal
+// Г’Г°ГҐГЎГҐГіГІГ±Гї Г®ГЇГЁГ±Г Г­ГЁГҐ ГЄГ«Г Г±Г±Г  animal
 #include "animal_atd.h"
 namespace simple_animals {
-	// параллелепипед
+	// ГЇГ Г°Г Г«Г«ГҐГ«ГҐГЇГЁГЇГҐГ¤
 	class bird : public animal {
-		char name[20];
-		int fly; // перелетная ли птица 0 - нет 1 - да
+		int fly; // ГЇГҐГ°ГҐГ«ГҐГІГ­Г Гї Г«ГЁ ГЇГІГЁГ¶Г  0 - Г­ГҐГІ 1 - Г¤Г 
+		
 	public:
-		// переопределяем интерфейс класса
-		void InData(ifstream &ifst);  // ввод
-		void Out(ofstream &ofst);    // вывод 
-		bird() {} // создание без инициализации.
+		// ГЇГҐГ°ГҐГ®ГЇГ°ГҐГ¤ГҐГ«ГїГҐГ¬ ГЁГ­ГІГҐГ°ГґГҐГ©Г± ГЄГ«Г Г±Г±Г 
+		void InData(ifstream &ifst);  // ГўГўГ®Г¤
+		void Out(ofstream &ofst);    // ГўГ»ГўГ®Г¤ 
+    int LenghtName();
+		bird() {} // Г±Г®Г§Г¤Г Г­ГЁГҐ ГЎГҐГ§ ГЁГ­ГЁГ¶ГЁГ Г«ГЁГ§Г Г¶ГЁГЁ.
 	};
 } // end simple_animals namespace
 #endif
+

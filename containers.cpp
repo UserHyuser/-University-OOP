@@ -1,8 +1,8 @@
 #include "container_atd.h"
 namespace simple_animals {
-	// Инициализация контейнера
+	// Г€Г­ГЁГ¶ГЁГ Г«ГЁГ§Г Г¶ГЁГї ГЄГ®Г­ГІГҐГ©Г­ГҐГ°Г 
 	container::container() : len(0) { }
-	// Очистка контейнера от элементов
+	// ГЋГ·ГЁГ±ГІГЄГ  ГЄГ®Г­ГІГҐГ©Г­ГҐГ°Г  Г®ГІ ГЅГ«ГҐГ¬ГҐГ­ГІГ®Гў
 	void container::Clear() {
 		for (int i = 0; i < len; i++) {
 			delete cont[i];
@@ -10,7 +10,7 @@ namespace simple_animals {
 		len = 0;
 	}
 
-	// Ввод содержимого контейнера
+	// Г‚ГўГ®Г¤ Г±Г®Г¤ГҐГ°Г¦ГЁГ¬Г®ГЈГ® ГЄГ®Г­ГІГҐГ©Г­ГҐГ°Г 
 	void container::In(ifstream &ifst) {
 		while (!ifst.eof()) {
 			if (((cont[len] = animal::In(ifst)) != 0) && len < 99) {
@@ -19,21 +19,35 @@ namespace simple_animals {
 		}
 	}
 
-	// Вывод содержимого контейнера
+	// Г‚Г»ГўГ®Г¤ Г±Г®Г¤ГҐГ°Г¦ГЁГ¬Г®ГЈГ® ГЄГ®Г­ГІГҐГ©Г­ГҐГ°Г 
 	void container::Out(ofstream &ofst) {
-		ofst << "Контейнер содержит " << len
-			<< " животных." << endl;
+		ofst << "ГЉГ®Г­ГІГҐГ©Г­ГҐГ° Г±Г®Г¤ГҐГ°Г¦ГЁГІ " << len
+			<< " Г¦ГЁГўГ®ГІГ­Г»Гµ." << endl;
 		for (int i = 0; i < len; i++) {
 			ofst << i << ": ";
 			cont[i]->Out(ofst);
+			ofst << "Г„Г«ГЁГ­Г  ГЁГ¬ГҐГ­ГЁ: " 
+				<< cont[i]->LenghtName() << endl;
 		}
 	}
+
 	void container::OnlyFish(ofstream &ofst) {
-		ofst << "Только рыба." << endl;
+		ofst << "Г’Г®Г«ГјГЄГ® Г°Г»ГЎГ ." << endl;
 		for (int i = 0; i < len; i++) {
 			ofst << i << ": ";
 			cont[i]->OnlyFish(ofst);
 		}
-		ofst << "Теперь не только рыба." << endl;
+		ofst << "Г’ГҐГЇГҐГ°Гј Г­ГҐ ГІГ®Г«ГјГЄГ® Г°Г»ГЎГ ." << endl;
+	}
+	void container::Sort() {
+		for (int i = 0; i < len - 1; i++) {
+			for (int j = i + 1; j < len; j++) {
+				if (cont[i]->Compare(*cont[j])) {
+					animal *tmp = cont[i];
+					cont[i] = cont[j];
+					cont[j] = tmp;
+				}
+			}
+		}
 	}
 } // end simple_animals namespace
