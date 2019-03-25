@@ -6,6 +6,7 @@ namespace simple_animals {
 	{
 		ifst >> eat;
 		ifst >> name;
+		ifst >> age;
 	}
 } // end simple_animals namespace
 
@@ -15,13 +16,13 @@ namespace simple_animals {
 	void beast::Out(ofstream &ofst)
 	{
 		if (eat == 0) {
-			ofst << "Это хищный зверь " << name << endl;
+			ofst << "Это хищный зверь " << name << " возрастом: " << age << endl;
 		}
 		else if (eat == 1){
-			ofst << "Это травоядный зверь " << name << endl;
+			ofst << "Это травоядный зверь " << name << " возрастом: " << age << endl;
 		}
 		else {
-			ofst << "Это насекомоядный зверь " << name << endl;
+			ofst << "Это насекомоядный зверь " << name << " возрастом: " << age << endl;
 		}
 
 	}
