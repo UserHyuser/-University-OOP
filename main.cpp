@@ -7,10 +7,15 @@
 
 using namespace std;
 
-int main()
+int main(int argc, char* argv[])
 {
 	setlocale(LC_ALL, "Russian");
-
+	if (argc != 3)
+	{
+		cout << "incorrect command line! "
+			"Waited: command infile outfile" << endl;
+		exit(1);
+	}
 	ifstream in;
 	in.open("in.txt");
 	if (!in.is_open())
@@ -31,6 +36,7 @@ int main()
 
 	simple_animals::container* begin = new simple_animals::container;
 	begin->In(in);
+	begin->Sort();
 	begin->Out(out);
 
 	cout << "Stop" << endl;

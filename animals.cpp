@@ -30,5 +30,8 @@ namespace simple_animals {
 		sp->InData(ifst);
 		return sp;
 	}
+	bool animal::Compare(animal &other) {
+		return LenghtName() < other.LenghtName();
+	}
 } // end simple_animals namespace
 

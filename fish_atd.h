@@ -17,3 +17,4 @@ namespace simple_animals {
 	};
 } // end simple_animals namespace
 #endif
+
