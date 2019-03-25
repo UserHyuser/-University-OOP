@@ -13,6 +13,7 @@ namespace simple_animals {
 		void InData(ifstream &ifst);  // ����
 		void Out(ofstream &ofst);     // ����� 
 		int LenghtName();
+    void OnlyFish(ofstream &ofst);
 		fish() {} // �������� ��� �������������.
 	};
 } // end simple_animals namespace

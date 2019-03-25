@@ -20,7 +20,7 @@ int main(int argc, char* argv[])
 	in.open("in.txt");
 	if (!in.is_open())
 	{
-		cout << "Îøèáêà ñ ôàéëîì";
+		cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã± Ã´Ã Ã©Ã«Ã®Ã¬";
 		return -1;
 	}
 
@@ -28,7 +28,7 @@ int main(int argc, char* argv[])
 	out.open("out.txt");
 	if (!out.is_open())
 	{
-		cout << "Îøèáêà ñ ôàéëîì";
+		cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã± Ã´Ã Ã©Ã«Ã®Ã¬";
 		return -1;
 	}
 
@@ -36,7 +36,8 @@ int main(int argc, char* argv[])
 
 	simple_animals::container* begin = new simple_animals::container;
 	begin->In(in);
-	begin->Sort();
+  begin->Sort();
+	begin->OnlyFish(out);
 	begin->Out(out);
 
 	cout << "Stop" << endl;

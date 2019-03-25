@@ -1,3 +1,4 @@
+
 #pragma once
 #ifndef __container_atd__
 #define __container_atd__
@@ -14,7 +15,8 @@ namespace simple_animals {
 		void LenghtName(ofstream &ofst);
 		void Sort();
 		void Clear();  // î÷èñòêà êîíòåéíåðà îò ôèãóð
-		container();    // èíèöèàëèçàöèÿ êîíòåéíåðà
+		void OnlyFish(ofstream &ofst);
+    container();    // èíèöèàëèçàöèÿ êîíòåéíåðà
 		~container() { Clear(); } // óòèëèçàöèÿ êîíòåéíåðà
 	};
 } // end simple_animals namespace

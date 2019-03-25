@@ -17,6 +17,7 @@ namespace simple_animals {
 		virtual void Out(ofstream &ofst) = 0;     // �����
 		bool Compare(animal &other);
 		virtual int LenghtName() = 0;
+    virtual void OnlyFish(ofstream &ofst);
 	};
 } // end simple_animals namespace
 #endif

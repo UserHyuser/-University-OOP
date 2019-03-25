@@ -1,6 +1,6 @@
 
-// Íåîáõîäèìà ïîäêëþ÷èòü èíôîðìàöèþ îáî âñåõ èìåþùèõñÿ
-// ãåîìåòðè÷åñêèõ ôèãóðàõ
+// ÃÃ¥Ã®Ã¡ÃµÃ®Ã¤Ã¨Ã¬Ã  Ã¯Ã®Ã¤ÃªÃ«Ã¾Ã·Ã¨Ã²Ã¼ Ã¨Ã­Ã´Ã®Ã°Ã¬Ã Ã¶Ã¨Ã¾ Ã®Ã¡Ã® Ã¢Ã±Ã¥Ãµ Ã¨Ã¬Ã¥Ã¾Ã¹Ã¨ÃµÃ±Ã¿
+// Ã£Ã¥Ã®Ã¬Ã¥Ã²Ã°Ã¨Ã·Ã¥Ã±ÃªÃ¨Ãµ Ã´Ã¨Ã£Ã³Ã°Ã Ãµ
 #include "bird_atd.h"
 #include "fish_atd.h"
 #include "beast_atd.h"
@@ -8,7 +8,7 @@ using namespace std;
 #include "animal_atd.h"
 
 namespace simple_animals {
-	// Ââîä ïàðàìåòðîâ îáîáùåííîé ôèãóðû 
+	// Ã‚Ã¢Ã®Ã¤ Ã¯Ã Ã°Ã Ã¬Ã¥Ã²Ã°Ã®Ã¢ Ã®Ã¡Ã®Ã¡Ã¹Ã¥Ã­Ã­Ã®Ã© Ã´Ã¨Ã£Ã³Ã°Ã» 
 	animal* animal::In(ifstream &ifst) {
 		animal *sp;
 		int k;
@@ -30,8 +30,13 @@ namespace simple_animals {
 		sp->InData(ifst);
 		return sp;
 	}
+
+	void animal::OnlyFish(ofstream &ofst) {
+		ofst << endl; 
+	}
+
 	bool animal::Compare(animal &other) {
 		return LenghtName() < other.LenghtName();
-	}
+	}
 } // end simple_animals namespace
 
