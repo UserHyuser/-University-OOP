@@ -6,25 +6,26 @@ namespace simple_animals {
 	{
 		ifst >> place;
 		ifst >> name;
+		ifst >> age;
 	}
 } // end simple_animals namespace
 
 using namespace std;
 namespace simple_animals {
-	// Вывод параметров шара
+	// Вывод параметров 
 	void fish::Out(ofstream &ofst)
 	{
 		if (place == 0) {
 			ofst << "Рыба " << name << " живет в озере"
-				<< endl;
+				<< " возраст: " << age << endl;
 		}
 		else if (place == 1) {
 			ofst << "Рыба " << name << " живет в море"
-				<< endl;
+				<< " возраст: " << age << endl;
 		}
 		else if (place == 2) {
 			ofst << "Рыба " << name << " живет в реке"
-				<< endl;
+				<< " возраст: " << age << endl;
 		}
 	}
 } // end simple_animals namespace

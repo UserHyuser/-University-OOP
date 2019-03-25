@@ -6,8 +6,9 @@
 namespace simple_animals {
 	// параллелепипед
 	class bird : public animal {
-		char name[20];
+		
 		int fly; // перелетная ли птица 0 - нет 1 - да
+		
 	public:
 		// переопределяем интерфейс класса
 		void InData(ifstream &ifst);  // ввод

@@ -8,7 +8,10 @@ namespace simple_animals {
 	// явл€етс€ абстрактным, обеспечива€, тем самым, 
 	// проверку интерфейса 
 	class animal {
+		
 	public:
+		int age = 0; //возраст
+		char name[20];
 		// иденитфикаци€, порождение и ввод фигуры из пото-ка
 		static  animal* In(ifstream &ifst);
 		virtual void InData(ifstream &ifst) = 0;  // ввод
