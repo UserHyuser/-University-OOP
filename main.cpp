@@ -4,12 +4,7 @@
 #include "animal_atd.h"
 //#include "containers.cpp"
 
-//namespace simple_animals {
-//	// Сигнатуры требуемых внешних функций
-//	void Clear();
-//	void In(ifstream &ifst);
-//	void Out(ofstream &ofst);
-//}
+
 using namespace std;
 
 int main()
@@ -37,6 +32,7 @@ int main()
 	simple_animals::container* begin = new simple_animals::container;
 	begin->In(in);
 	begin->Out(out);
+	begin->MultiMethod(out);
 
 	cout << "Stop" << endl;
 

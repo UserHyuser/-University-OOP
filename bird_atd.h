@@ -12,6 +12,9 @@ namespace simple_animals {
 		// переопределяем интерфейс класса
 		void InData(ifstream &ifst);  // ввод
 		void Out(ofstream &ofst);    // вывод 
+		void MultiMethod(animal *other, ofstream &ofst);
+		void MMFish(ofstream &ofst);
+		void MMBird(ofstream &ofst);
 		bird() {} // создание без инициализации.
 	};
 } // end simple_animals namespace

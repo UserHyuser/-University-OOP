@@ -1,7 +1,7 @@
 #include "bird_atd.h"
 using namespace std;
 namespace simple_animals {
-	// Ввод параметров параллелепипеда
+	// Ввод параметров 
 	void bird::InData(ifstream &ifst)
 	{
 		ifst >> fly;
@@ -11,7 +11,7 @@ namespace simple_animals {
 
 using namespace std;
 namespace simple_animals {
-	// Вывод параметров параллелепипеда
+	// Вывод параметров 
 	void bird::Out(ofstream &ofst)
 	{
 		if (fly==0) {
