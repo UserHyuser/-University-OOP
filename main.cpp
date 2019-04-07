@@ -143,6 +143,7 @@ noerrors:;
 	begin->Sort();
 	begin->OnlyFish(out);
 	begin->Out(out);
+	begin->MultiMethod(out);
 
 	cout << "Stop" << endl;
 

@@ -18,6 +18,11 @@ namespace simple_animals {
 		bool Compare(animal &other);
 		virtual int LenghtName() = 0;
     virtual void OnlyFish(ofstream &ofst);
+	virtual void MultiMethod(animal *other,
+		ofstream &ofst) = 0;
+	virtual void MMFish(ofstream &ofst) = 0;
+	virtual void MMBeast(ofstream &ofst) = 0;
+	virtual void MMBird(ofstream &ofst) = 0;
 	};
 } // end simple_animals namespace
 #endif

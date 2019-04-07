@@ -11,7 +11,11 @@ namespace simple_animals {
 	public:
 		// переопределяем интерфейс класса
 		void InData(ifstream &ifst);  // ввод
-		void Out(ofstream &ofst);    // вывод 
+		void Out(ofstream &ofst);
+		void MultiMethod(animal *other, ofstream &ofst);
+		void MMFish(ofstream &ofst);
+		void MMBird(ofstream &ofst);
+		void MMBeast(ofstream &ofst);// вывод 
 		int LenghtName();
 		beast() {} // создание без инициализации.
 	};
