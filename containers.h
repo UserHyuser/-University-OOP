@@ -1,5 +1,5 @@
 #pragma once
-#include "container_atd.h"
+/*#include "container_atd.h"
 namespace simple_shapes {
 	// Инициализация контейнера
 	container::container() : len(0) { }
@@ -30,4 +30,4 @@ namespace simple_shapes {
 		}
 	}
 } // end simple_shapes namespace
-
+*/

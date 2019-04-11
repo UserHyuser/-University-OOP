@@ -7,6 +7,7 @@
 namespace simple_animals {
 	// ���
 	class fish : public animal {
+	public:
 		int place; // ��� ����� ���� 0 - ����� 1 - ���� 2 - ����
 	public:
 		// �������������� ��������� ������
