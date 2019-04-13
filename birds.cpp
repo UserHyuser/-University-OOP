@@ -1,28 +1,26 @@
 #include "bird_atd.h"
 using namespace std;
 namespace simple_animals {
-	// Ввод параметров параллелепипеда
+	// Input parameters of bird from file
 	void bird::InData(ifstream &ifst)
 	{
 		ifst >> fly;
 		ifst >> name;
 		ifst >> age;
 	}
-} // end simple_animals namespace
 
-using namespace std;
-namespace simple_animals {
-	// Вывод параметров
+	// Output parameters of bird to file
 	void bird::Out(ofstream &ofst)
 	{
-		if (fly==0) {
-			ofst << "Это неперелетная птица " << name << " возраст: "<< age << endl;
+		if (fly == 0) {
+			ofst << "Bird " << name << " is non-migratory. Age: " << age << endl;
 		}
 		else {
-			ofst << "Это перелетная птица " << name << " возраст: " << age << endl;
+			ofst << "Bird " << name << " is migratory. Age: " << age << endl;
 		}
-			
+
 	}
+
 	int bird::LenghtName() {
 		int arrayLength = 0;
 		for (int i = 0; name[i]; i++) {

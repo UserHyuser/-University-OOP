@@ -1,5 +1,4 @@
 #include "container_atd.h"
-#include "bird_atd.h"
 
 namespace simple_animals {
 	void container::MultiMethod(ofstream &ofst) {
@@ -11,4 +10,5 @@ namespace simple_animals {
 				cont[j]->Out(ofst);
 			}
 		}
+		ofst << endl;
 	}}

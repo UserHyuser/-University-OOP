@@ -2,20 +2,9 @@
 #include "..//1.2 laba - oop/animal_atd.h"
 #include "..//1.2 laba - oop/beast_atd.h"
 #include "..//1.2 laba - oop/bird_atd.h"
+#include "..//1.2 laba - oop/fish_atd.h"
 #include "..//1.2 laba - oop/container_atd.h"
-#include "..//1.2 laba - oop/fishes_MM.cpp"
-#include "..//1.2 laba - oop/fishes_MMBeast.cpp"
-#include "..//1.2 laba - oop/fishes_MMBird.cpp"
-#include "..//1.2 laba - oop/fishes_MMFish.cpp"
-#include "..//1.2 laba - oop/birdes_MM.cpp"
-#include "..//1.2 laba - oop/beastes_MM.cpp"
-#include "..//1.2 laba - oop/birdes_MMBeast.cpp"
-#include "..//1.2 laba - oop/birdes_MMBird.cpp"
-#include "..//1.2 laba - oop/birdes_MMFish.cpp"
-#include "..//1.2 laba - oop/beastes_MMBeast.cpp"
-#include "..//1.2 laba - oop/beastes_MMBirds.cpp"
-#include "..//1.2 laba - oop/beastes_MMFish.cpp"
-#include <string.h>
+#include <string>
 #include <fstream>
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -26,34 +15,58 @@ TEST_CLASS(In_lower)
 {
 public:
 
-	TEST_METHOD(Test1_fish_name)
+	TEST_METHOD(Test_fish)
 	{
 		fish* testing_type = new fish;
 		ifstream test_file("../UnitTest/TestFiles/In_low_fish.txt");
 		testing_type->InData(test_file);
-		string actual = testing_type->name;
-		string expected = "Плотва";
-		Assert::AreEqual(expected, actual);
+		string actual_name = testing_type->name;
+		string expected_name = "Плотва";
+		Assert::AreEqual(expected_name, actual_name);
+
+		int actual_age = testing_type->age;
+		int expected_age = 3;
+		Assert::AreEqual(expected_age, actual_age);
+
+		int actual_place = testing_type->place;
+		int expected_place = 2;
+		Assert::AreEqual(expected_place, actual_place);
 	}
 
-	TEST_METHOD(Test2_fish_age)
+	TEST_METHOD(Test_beast)
 	{
-		fish* testing_type = new fish;
-		ifstream test_file("../UnitTest/TestFiles/In_low_fish.txt");
+		beast* testing_type = new beast;
+		ifstream test_file("../UnitTest/TestFiles/In_low_beast.txt");
 		testing_type->InData(test_file);
-		int actual = testing_type->age;
-		int expected = 3;
-		Assert::AreEqual(expected, actual);
+		int actual_eat = testing_type->eat;
+		int expected_eat = 1;
+		Assert::AreEqual(expected_eat, actual_eat);
+
+		int actual_age = testing_type->age;
+		int expected_age = 3;
+		Assert::AreEqual(expected_age, actual_age);
+
+		string actual_name = testing_type->name;
+		string expected_name = "Кошка";
+		Assert::AreEqual(expected_name, actual_name);
 	}
 
-	TEST_METHOD(Test3_fish_place)
+	TEST_METHOD(Test_bird)
 	{
-		fish* testing_type = new fish;
-		ifstream test_file("../UnitTest/TestFiles/In_low_fish.txt");
+		bird* testing_type = new bird;
+		ifstream test_file("../UnitTest/TestFiles/In_low_bird.txt");
 		testing_type->InData(test_file);
-		int actual = testing_type->place;
-		int expected = 2;
-		Assert::AreEqual(expected, actual);
+		int actual_fly = testing_type->fly;
+		int expected_fly = 1;
+		Assert::AreEqual(expected_fly, actual_fly);
+
+		int actual_age = testing_type->age;
+		int expected_age = 3;
+		Assert::AreEqual(expected_age, actual_age);
+
+		string actual_name = testing_type->name;
+		string expected_name = "Соловей";
+		Assert::AreEqual(expected_name, actual_name);
 	}
 };
 
@@ -107,7 +120,47 @@ public:
 		string actual;
 		getline(test_file_in, actual);
 		test_file_in.close();
-		string expected = "Р С‹Р±Р° Плотва Р¶РёРІРµС‚ РІ СЂРµРєРµ РІРѕР·СЂР°СЃС‚: 3";
+		string expected = "Fish Плотва lives in river. Age: 3";
+
+		Assert::AreEqual(expected, actual);
+	}
+
+	TEST_METHOD(Test2_bird)
+	{
+		bird testing_type;
+		testing_type.age = 3;
+		char tmp_name[20] = "Воробей";
+		testing_type.fly = 1;
+		strcpy(testing_type.name, tmp_name);
+		ofstream test_file_out("../UnitTest/TestFiles/Out_lower_bird.txt");
+		testing_type.Out(test_file_out);
+		test_file_out.close();
+
+		ifstream test_file_in("../UnitTest/TestFiles/Out_lower_bird.txt");
+		string actual;
+		getline(test_file_in, actual);
+		test_file_in.close();
+		string expected = "Bird Воробей is migratory. Age: 3";
+
+		Assert::AreEqual(expected, actual);
+	}
+
+	TEST_METHOD(Test3_beast)
+	{
+		beast testing_type;
+		testing_type.age = 3;
+		char tmp_name[20] = "Кошка";
+		testing_type.eat = 1;
+		strcpy(testing_type.name, tmp_name);
+		ofstream test_file_out("../UnitTest/TestFiles/Out_lower_beast.txt");
+		testing_type.Out(test_file_out);
+		test_file_out.close();
+
+		ifstream test_file_in("../UnitTest/TestFiles/Out_lower_beast.txt");
+		string actual;
+		getline(test_file_in, actual);
+		test_file_in.close();
+		string expected = "Beast Кошка is herbivorous. Age: 3";
 
 		Assert::AreEqual(expected, actual);
 	}
@@ -235,7 +288,6 @@ public:
 
 	TEST_METHOD(Test3)
 	{
-		
 		beast s;
 		char testName[30] = "Волкиииииииииииииии";
 		for (int i = 0; i < 20; i++)
@@ -244,7 +296,7 @@ public:
 
 		Assert::AreEqual(19, actual);
 	}
-	
+
 };
 
 

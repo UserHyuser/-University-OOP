@@ -23,7 +23,7 @@
     <ProjectGuid>{3DDEE1DE-CA06-4660-AC84-51A9A8D2AF76}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>UnitTest</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
     <ProjectSubType>NativeUnitTestProject</ProjectSubType>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -155,9 +155,22 @@
   <ItemGroup>
     <ClCompile Include="..\1.2 laba - oop\animals.cpp" />
     <ClCompile Include="..\1.2 laba - oop\beasts.cpp" />
+    <ClCompile Include="..\1.2 laba - oop\beasts_MM.cpp" />
+    <ClCompile Include="..\1.2 laba - oop\beasts_MMBeast.cpp" />
+    <ClCompile Include="..\1.2 laba - oop\beasts_MMBirds.cpp" />
+    <ClCompile Include="..\1.2 laba - oop\beasts_MMFish.cpp" />
     <ClCompile Include="..\1.2 laba - oop\birds.cpp" />
+    <ClCompile Include="..\1.2 laba - oop\birds_MM.cpp" />
+    <ClCompile Include="..\1.2 laba - oop\birds_MMBeast.cpp" />
+    <ClCompile Include="..\1.2 laba - oop\birds_MMBird.cpp" />
+    <ClCompile Include="..\1.2 laba - oop\birds_MMFish.cpp" />
     <ClCompile Include="..\1.2 laba - oop\containers.cpp" />
+    <ClCompile Include="..\1.2 laba - oop\containers_MM.cpp" />
     <ClCompile Include="..\1.2 laba - oop\fishes.cpp" />
+    <ClCompile Include="..\1.2 laba - oop\fishes_MM.cpp" />
+    <ClCompile Include="..\1.2 laba - oop\fishes_MMBeast.cpp" />
+    <ClCompile Include="..\1.2 laba - oop\fishes_MMBird.cpp" />
+    <ClCompile Include="..\1.2 laba - oop\fishes_MMFish.cpp" />
     <ClCompile Include="..\1.2 laba - oop\main.cpp" />
     <ClCompile Include="unittest.cpp" />
   </ItemGroup>
@@ -165,7 +178,6 @@
     <ClInclude Include="..\1.2 laba - oop\animal_atd.h" />
     <ClInclude Include="..\1.2 laba - oop\beast_atd.h" />
     <ClInclude Include="..\1.2 laba - oop\bird_atd.h" />
-    <ClInclude Include="..\1.2 laba - oop\containers.h" />
     <ClInclude Include="..\1.2 laba - oop\container_atd.h" />
     <ClInclude Include="..\1.2 laba - oop\fish_atd.h" />
   </ItemGroup>

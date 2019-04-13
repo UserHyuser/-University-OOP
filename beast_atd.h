@@ -1,24 +1,21 @@
 #pragma once
 #ifndef __beast_atd__
 #define __beast_atd__
-// Требеутся описание класса animal
 #include "animal_atd.h"
 namespace simple_animals {
-	// животное
 	class beast : public animal {
-		int eat; // хищник - 0 травоядное - 1 насекомоядное -2
-		
 	public:
-		
-		// переопределяем интерфейс класса
-		void InData(ifstream &ifst);  // ввод
+		// Food - 0 predator, 1 - herbivorous, 2 - insectivore
+		int eat;
+		// Redefine interface of class
+		void InData(ifstream &ifst);
 		void Out(ofstream &ofst);
 		void MultiMethod(animal *other, ofstream &ofst);
 		void MMFish(ofstream &ofst);
 		void MMBird(ofstream &ofst);
-		void MMBeast(ofstream &ofst);// вывод 
+		void MMBeast(ofstream &ofst);
 		int LenghtName();
-		beast() {} // создание без инициализации.
+		beast() {} // Create without initialization
 	};
 } // end simple_animals namespace
 #endif

@@ -1,8 +1,10 @@
 #include "container_atd.h"
+
 namespace simple_animals {
-	// Èíèöèàëèçàöèÿ êîíòåéíåðà
+	// Container initialization
 	container::container() : len(0) { }
-	// Î÷èñòêà êîíòåéíåðà îò ýëåìåíòîâ
+
+	// Container cleaning (free memory)
 	void container::Clear() {
 		for (int i = 0; i < len; i++) {
 			delete cont[i];
@@ -10,7 +12,7 @@ namespace simple_animals {
 		len = 0;
 	}
 
-	// Ââîä ñîäåðæèìîãî êîíòåéíåðà
+	// Input container's content from specified source
 	void container::In(ifstream &ifst) {
 		while (!ifst.eof()) {
 			if (((cont[len] = animal::In(ifst)) != 0) && len < 99) {
@@ -19,26 +21,30 @@ namespace simple_animals {
 		}
 	}
 
-	// Âûâîä ñîäåðæèìîãî êîíòåéíåðà
+	// Output container's content to specified stream
 	void container::Out(ofstream &ofst) {
-		ofst << "Контейнер содержит " << len
-			<< " животных." << endl;
+		ofst << "Container contains " << len
+			<< " animals." << endl;
 		for (int i = 0; i < len; i++) {
 			ofst << i << ": ";
 			cont[i]->Out(ofst);
-			ofst << "Длина имени: " 
+			ofst << "Name's lenght: "
 				<< cont[i]->LenghtName() << endl;
 		}
+		ofst << endl;
 	}
 
+	// Filtered output
 	void container::OnlyFish(ofstream &ofst) {
-		ofst << "Только рыба." << endl;
+		ofst << "Only fishes." << endl;
 		for (int i = 0; i < len; i++) {
 			ofst << i << ": ";
 			cont[i]->OnlyFish(ofst);
 		}
-		ofst << "Теперь не только рыба." << endl;
+		ofst << endl;
 	}
+
+	// Sorting animals by LenghtName
 	void container::Sort() {
 		for (int i = 0; i < len - 1; i++) {
 			for (int j = i + 1; j < len; j++) {

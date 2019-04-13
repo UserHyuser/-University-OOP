@@ -1,24 +1,17 @@
-
-// Íåîáõîäèìà ïîäêëþ÷èòü èíôîðìàöèþ îáî âñåõ èìåþùèõñÿ
-// ãåîìåòðè÷åñêèõ ôèãóðàõ
 #include "bird_atd.h"
 #include "fish_atd.h"
 #include "beast_atd.h"
-#include "..//1.2 laba - oop/animal_atd.h"
-#include "..//1.2 laba - oop/beast_atd.h"
-#include "..//1.2 laba - oop/bird_atd.h"
-#include "..//1.2 laba - oop/container_atd.h"
-#include "..//1.2 laba - oop/fish_atd.h"
-using namespace std;
 #include "animal_atd.h"
+#include "container_atd.h"
+using namespace std;
 
 namespace simple_animals {
-	// Ââîä ïàðàìåòðîâ îáîáùåííîé ôèãóðû 
+	// Input parameters of generalized animal from file
 	animal* animal::In(ifstream &ifst) {
 		animal *sp;
 		int k;
 		ifst >> k;
-		switch (k) 
+		switch (k)
 		{
 		case 1:
 			sp = new bird;
@@ -37,7 +30,7 @@ namespace simple_animals {
 	}
 
 	void animal::OnlyFish(ofstream &ofst) {
-		ofst << endl; 
+		ofst << endl;
 	}
 
 	bool animal::Compare(animal &other) {

@@ -1,24 +1,24 @@
-
 #pragma once
 #ifndef __container_atd__
 #define __container_atd__
 #include "animal_atd.h"
 namespace simple_animals {
-	// Ïðîñòåéøèé êîíòåéíåð íà îñíîâå îäíîìåðíîãî ìàññèâà
+	// Simple container using one-dimensional massive
 	class container {
-		enum { max_len = 100 }; // ìàêñèìàëüíàÿ äëèíà
-		int len; // òåêóùàÿ äëèíà
+		//Contaier's maximal length
+		enum { max_len = 100 };
+		int len; // Current length
 		animal *cont[max_len];
 	public:
-		void In(ifstream &ifst);     // ââîä 
-		void Out(ofstream &ofst);    // âûâîä 
+		void In(ifstream &ifst);
+		void Out(ofstream &ofst);
 		void LenghtName(ofstream &ofst);
 		void Sort();
-		void Clear();  // î÷èñòêà êîíòåéíåðà îò ôèãóð
+		void Clear();
 		void MultiMethod(ofstream &ofst);
 		void OnlyFish(ofstream &ofst);
-    container();    // èíèöèàëèçàöèÿ êîíòåéíåðà
-		~container() { Clear(); } // óòèëèçàöèÿ êîíòåéíåðà
+		container(); // Container initialization
+		~container() { Clear(); } // Create without initialization
 	};
 } // end simple_animals namespace
 #endif
