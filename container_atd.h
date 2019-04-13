@@ -15,6 +15,7 @@ namespace simple_animals {
 		void LenghtName(ofstream &ofst);
 		void Sort();
 		void Clear();  // î÷èñòêà êîíòåéíåðà îò ôèãóð
+		void MultiMethod(ofstream &ofst);
 		void OnlyFish(ofstream &ofst);
     container();    // èíèöèàëèçàöèÿ êîíòåéíåðà
 		~container() { Clear(); } // óòèëèçàöèÿ êîíòåéíåðà

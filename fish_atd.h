@@ -13,6 +13,11 @@ namespace simple_animals {
 		void InData(ifstream &ifst);  // ����
 		void Out(ofstream &ofst);     // ����� 
 		int LenghtName();
+		void MMFish(ofstream &ofst);
+		void MMBird(ofstream &ofst);
+		void MMBeast(ofstream &ofst);
+		void MultiMethod(animal *other, ofstream &ofst);
+
     void OnlyFish(ofstream &ofst);
 		fish() {} // �������� ��� �������������.
 	};
