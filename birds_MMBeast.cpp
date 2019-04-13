@@ -2,6 +2,6 @@
 
 namespace simple_animals {
 	void bird::MMBeast(ofstream &ofst) {
-		ofst << "Bird and Beast" << endl;
+		ofst << "Beast and Bird" << endl;
 	}
 }

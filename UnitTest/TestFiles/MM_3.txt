@@ -1,0 +1,47 @@
+Multimethod.
+Bird and Fish
+Bird Воробей is non-migratory. Age: 2
+Fish Плотва lives in lake. Age: 3
+Bird and Beast
+Bird Воробей is non-migratory. Age: 2
+Beast Кошка is herbivorous. Age: 3
+Bird and Bird
+Bird Воробей is non-migratory. Age: 2
+Bird Орел is migratory. Age: 2
+Bird and Fish
+Bird Воробей is non-migratory. Age: 2
+Fish Щука lives in lake. Age: 2
+Bird and Beast
+Bird Воробей is non-migratory. Age: 2
+Beast Кот is herbivorous. Age: 3
+Fish and Beast
+Fish Плотва lives in lake. Age: 3
+Beast Кошка is herbivorous. Age: 3
+Fish and Bird
+Fish Плотва lives in lake. Age: 3
+Bird Орел is migratory. Age: 2
+Fish and Fish
+Fish Плотва lives in lake. Age: 3
+Fish Щука lives in lake. Age: 2
+Fish and Beast
+Fish Плотва lives in lake. Age: 3
+Beast Кот is herbivorous. Age: 3
+Beast and Bird
+Beast Кошка is herbivorous. Age: 3
+Bird Орел is migratory. Age: 2
+Beast and Fish
+Beast Кошка is herbivorous. Age: 3
+Fish Щука lives in lake. Age: 2
+Beast and Beast
+Beast Кошка is herbivorous. Age: 3
+Beast Кот is herbivorous. Age: 3
+Bird and Fish
+Bird Орел is migratory. Age: 2
+Fish Щука lives in lake. Age: 2
+Bird and Beast
+Bird Орел is migratory. Age: 2
+Beast Кот is herbivorous. Age: 3
+Fish and Beast
+Fish Щука lives in lake. Age: 2
+Beast Кот is herbivorous. Age: 3
+

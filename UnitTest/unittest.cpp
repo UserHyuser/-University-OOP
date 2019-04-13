@@ -296,7 +296,38 @@ public:
 
 		Assert::AreEqual(19, actual);
 	}
+};
 
+TEST_CLASS(Multimethod)
+{
+public:
+
+	TEST_METHOD(Test_MM)
+	{
+
+		ifstream test_file_in("../UnitTest/TestFiles/MM_1.txt");
+		simple_animals::container* begin = new simple_animals::container;
+		begin->In(test_file_in);
+		ofstream test_file_out("../UnitTest/TestFiles/MM_2.txt");
+		begin->MultiMethod(test_file_out);
+
+		int expected = true;
+		int actual = true;
+
+		int i = 0;
+		char ch_1[20], ch_2[20];
+		FILE *file_1 = fopen("../UnitTest/TestFiles/MM_2.txt", "r");;
+		FILE *file_2 = fopen("../UnitTest/TestFiles/MM_3.txt", "r");
+		while (!feof(file_1) && !feof(file_2))
+		{
+			fgets(ch_1, 20, file_1);
+			fgets(ch_2, 20, file_2);
+			i++;
+			if (strcmp(ch_1, ch_2))
+				actual = false;
+		}
+		Assert::AreEqual(expected, actual);
+	}
 };
 
 

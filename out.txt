@@ -42,13 +42,13 @@ Fish Plotva lives in lake. Age: 2
 Bird and Bird
 Bird Vorobey is non-migratory. Age: 3
 Bird Soika is non-migratory. Age: 4
-Beast and Bird
+Bird and Beast
 Bird Vorobey is non-migratory. Age: 3
 Beast Vidra is herbivorous. Age: 15
-Beast and Bird
+Bird and Beast
 Bird Vorobey is non-migratory. Age: 3
 Beast Volk is predator. Age: 10
-Beast and Bird
+Bird and Beast
 Bird Vorobey is non-migratory. Age: 3
 Beast Lisa is insectivorous. Age: 12
 Bird and Bird
@@ -60,61 +60,61 @@ Fish Shchuka lives in river. Age: 2
 Fish and Fish
 Fish Seledka lives in sea. Age: 3
 Fish Plotva lives in lake. Age: 2
-Bird and Fish
+Fish and Bird
 Fish Seledka lives in sea. Age: 3
 Bird Soika is non-migratory. Age: 4
-Beast and Fish
+Fish and Beast
 Fish Seledka lives in sea. Age: 3
 Beast Vidra is herbivorous. Age: 15
-Beast and Fish
+Fish and Beast
 Fish Seledka lives in sea. Age: 3
 Beast Volk is predator. Age: 10
-Beast and Fish
+Fish and Beast
 Fish Seledka lives in sea. Age: 3
 Beast Lisa is insectivorous. Age: 12
-Bird and Fish
+Fish and Bird
 Fish Seledka lives in sea. Age: 3
 Bird Orel is migratory. Age: 6
 Fish and Fish
 Fish Shchuka lives in river. Age: 2
 Fish Plotva lives in lake. Age: 2
-Bird and Fish
+Fish and Bird
 Fish Shchuka lives in river. Age: 2
 Bird Soika is non-migratory. Age: 4
-Beast and Fish
+Fish and Beast
 Fish Shchuka lives in river. Age: 2
 Beast Vidra is herbivorous. Age: 15
-Beast and Fish
+Fish and Beast
 Fish Shchuka lives in river. Age: 2
 Beast Volk is predator. Age: 10
-Beast and Fish
+Fish and Beast
 Fish Shchuka lives in river. Age: 2
 Beast Lisa is insectivorous. Age: 12
-Bird and Fish
+Fish and Bird
 Fish Shchuka lives in river. Age: 2
 Bird Orel is migratory. Age: 6
-Bird and Fish
+Fish and Bird
 Fish Plotva lives in lake. Age: 2
 Bird Soika is non-migratory. Age: 4
-Beast and Fish
+Fish and Beast
 Fish Plotva lives in lake. Age: 2
 Beast Vidra is herbivorous. Age: 15
-Beast and Fish
+Fish and Beast
 Fish Plotva lives in lake. Age: 2
 Beast Volk is predator. Age: 10
-Beast and Fish
+Fish and Beast
 Fish Plotva lives in lake. Age: 2
 Beast Lisa is insectivorous. Age: 12
-Bird and Fish
+Fish and Bird
 Fish Plotva lives in lake. Age: 2
 Bird Orel is migratory. Age: 6
-Beast and Bird
+Bird and Beast
 Bird Soika is non-migratory. Age: 4
 Beast Vidra is herbivorous. Age: 15
-Beast and Bird
+Bird and Beast
 Bird Soika is non-migratory. Age: 4
 Beast Volk is predator. Age: 10
-Beast and Bird
+Bird and Beast
 Bird Soika is non-migratory. Age: 4
 Beast Lisa is insectivorous. Age: 12
 Bird and Bird
@@ -126,16 +126,16 @@ Beast Volk is predator. Age: 10
 Beast and Beast
 Beast Vidra is herbivorous. Age: 15
 Beast Lisa is insectivorous. Age: 12
-Bird and Beast
+Beast and Bird
 Beast Vidra is herbivorous. Age: 15
 Bird Orel is migratory. Age: 6
 Beast and Beast
 Beast Volk is predator. Age: 10
 Beast Lisa is insectivorous. Age: 12
-Bird and Beast
+Beast and Bird
 Beast Volk is predator. Age: 10
 Bird Orel is migratory. Age: 6
-Bird and Beast
+Beast and Bird
 Beast Lisa is insectivorous. Age: 12
 Bird Orel is migratory. Age: 6
 
