@@ -6,9 +6,10 @@
 namespace simple_animals {
 	// животное
 	class beast : public animal {
-		
 		int eat; // хищник - 0 травоядное - 1 насекомоядное -2
+		
 	public:
+		
 		// переопределяем интерфейс класса
 		void InData(ifstream &ifst);  // ввод
 		void Out(ofstream &ofst);

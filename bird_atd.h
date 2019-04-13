@@ -7,9 +7,10 @@
 namespace simple_animals {
 	// ïàðàëëåëåïèïåä
 	class bird : public animal {
-		int fly; // ïåðåëåòíàÿ ëè ïòèöà 0 - íåò 1 - äà
+		
 		
 	public:
+		int fly; // ïåðåëåòíàÿ ëè ïòèöà 0 - íåò 1 - äà
 		// ïåðåîïðåäåëÿåì èíòåðôåéñ êëàññà
 		void InData(ifstream &ifst);  // ââîä
 		void Out(ofstream &ofst);

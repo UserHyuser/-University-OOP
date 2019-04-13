@@ -7,8 +7,9 @@
 namespace simple_animals {
 	// ���
 	class fish : public animal {
-		int place; // ��� ����� ���� 0 - ����� 1 - ���� 2 - ����
+		 // ��� ����� ���� 0 - ����� 1 - ���� 2 - ����
 	public:
+		int place;
 		// �������������� ��������� ������
 		void InData(ifstream &ifst);  // ����
 		void Out(ofstream &ofst);     // ����� 

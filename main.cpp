@@ -2,10 +2,16 @@
 #include <fstream>
 #include "container_atd.h"
 #include "animal_atd.h"
+#include "..//1.2 laba - oop/animal_atd.h"
+#include "..//1.2 laba - oop/beast_atd.h"
+#include "..//1.2 laba - oop/bird_atd.h"
+#include "..//1.2 laba - oop/container_atd.h"
+#include "..//1.2 laba - oop/fish_atd.h"
 //#include "containers.cpp"
 
 
 using namespace std;
+using namespace simple_animals;
 
 int main(int argc, char* argv[])
 {
@@ -143,7 +149,7 @@ noerrors:;
 	begin->Sort();
 	begin->OnlyFish(out);
 	begin->Out(out);
-	begin->MultiMethod(out);
+	//begin->MultiMethod(out);
 
 	cout << "Stop" << endl;
 

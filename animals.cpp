@@ -4,6 +4,11 @@
 #include "bird_atd.h"
 #include "fish_atd.h"
 #include "beast_atd.h"
+#include "..//1.2 laba - oop/animal_atd.h"
+#include "..//1.2 laba - oop/beast_atd.h"
+#include "..//1.2 laba - oop/bird_atd.h"
+#include "..//1.2 laba - oop/container_atd.h"
+#include "..//1.2 laba - oop/fish_atd.h"
 using namespace std;
 #include "animal_atd.h"
 
